@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ College LMS</title>
+    <link rel="stylesheet" href="css/SD.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/college_logo.png" alt="College Logo">
+        </div>
+        <h1>RJ College TYBScIT</h1>
+        <header style="background-color: rgb(7, 133, 133);">
+            <h1>Welcome to Student Dashboard</h1>
+        </header>
+        
+    </header>
+    
+    <main style="background-image: url('image/bg.jpg'); background-position: center;">
+        <section>
+            <aside class="sidebar">
+                <div class="profile">
+                    <h2>Student Profile</h2>
+                    <img src="image/profile.jpg" alt="Profile Picture">
+                    <div class="profile-details">
+                        <p><strong>Name:</strong> Ritika Jaiswar</p>
+                        <p><strong>Roll Number:</strong> 6437</p>
+                        <p><strong>Class:</strong> TYBScIT </p>
+                        <p style="color: blue; text-decoration: underline;"><strong>LOG OUT</strong></p>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        
+        <section class="assignments">
+            <h2>Assignments</h2>
+            <div class="assignment-list">
+                <div class="assignment">
+                    <h3>HCI</h3>
+                    <P style="color: black;">Case Study</P>
+                    <p>Due Date: February 25, 2024</p>
+                    <input type="file" accept=".pdf,.doc,.docx" onchange="handleAssignmentUpload(event)">
+                    <button class="submit-btn" onclick="submitAssignment('HCI Case Study')">Submit</button>
+                </div>
+                <div class="assignment">
+                    <h3>HCI</h3>
+                    <P style="color: black;">Journal Submission</P>
+                    <p>Due Date: February 26, 2024</p>
+                    <input type="file" accept=".pdf,.doc,.docx" onchange="handleAssignmentUpload(event)">
+                    <button class="submit-btn" onclick="submitAssignment('Assignment 2')">Submit</button>
+                </div>
+            </div>
+            <h2>Submitted Assignments</h2>
+            <ul class="submitted-assignments">
+                <li style="color: black;">HCI Case Study: <span class="submission-status">Submitted</span></li>
+                <li style="color: black;">HCI Journal Submission: <span class="submission-status">Not Submitted</span></li>
+            </ul>
+        </section>
+        <section class="study-materials">
+            <h2>Study Materials</h2>
+            <div class="material-list">
+                <div class="material">
+                    
+                    <h3>BI</h3>
+                    <p>Title: Unit1</p>
+                    <a href="#" class="view-material" onclick="viewMaterial('Material 1')">View</a>
+                </div>
+                <div class="material">
+                    <h3>HCI</h3>
+                    <p>Title: Unit2</p>
+                    <a href="#" class="view-material" onclick="viewMaterial('Material 2')">View</a>
+                </div>
+            </div>
+        </section>
+        <section class="scores">
+            <h2>Scores</h2>
+            <ul>
+                <li>HCI Case Study: <span id="score-assignment1">-</span></li>
+                <li>BI Assignment: <span id="score-assignment2">-</span></li>
+            </ul>
+        </section>
+        <script src="DS.js"></script>
+    </main>
+    <footer>
+        
+        <p>&copy; 2024 RJ College</p>
+    </footer>
+    
+</body>
+</html>

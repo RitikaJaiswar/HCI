@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJ College LMS</title>
+    <link rel="stylesheet" href="css/TD.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/college_logo.png" alt="College Logo">
+        </div>
+        <h1>RJ College TYBScIT</h1>
+    </header>
+    <header class="head">
+        <div>
+            <h1 style="color: black; font-family: 'Times New Roman', Times, serif;">Welcome! Teacher Archana_Bhide</h1>
+            <p style="color: rgb(3, 3, 116); font-weight: bold;">Here you can post materials and assignments.</p>
+        </div>
+        <div class="button">
+            <button id="b1">Uplaod Study Material</button>
+            <button id="b2">Post Assignment</button>
+            <button id="b3">Add Student</button>
+            <a  href="#uploadedFiles"><button style="width: 300px;" id="b4">View Study Materials And Assignments</button></a>
+            
+            <a href="index.html"><button id="b4">Log Out</button></a>
+            
+        </div>
+    </header>
+
+    <main style="background-image: url('image/bg.jpg'); background-position: center;">
+        <form id="postAssignmentForm">
+            <div class="form-group">
+                <h1>Post Assignments</h1>
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+            </div>
+            <div class="form-group">
+                <label for="task">Task:</label>
+                <textarea id="task" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" id="dueDate" required>
+            </div>
+            <button  type="submit" id="postButton">Post</button>
+        </form>
+        
+        <div class="container" id="myForm">
+            <h1>Study Material Upload</h1>
+            <form id="uploadForm" class="hidden">
+                <div class="form-group">
+                    <label for="file">Select File:</label>
+                    <input type="file" id="file" accept=".pdf, .doc, .docx" required>
+                </div>
+                <button id="uploadButton" type="submit">Upload</button>
+            </form>
+            
+        </div>
+        <form id="addStudentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="grade">Div:</label>
+                <input type="text" id="grade" required>
+            </div>
+            <button id="addButton" type="submit">Add Student</button>
+        </form>
+        <div class="views" >
+            <div id="Message" style="background-color: rgb(146, 176, 203); color: black; font-family: 'Times New Roman', Times, serif; font-size: larger;">
+                <h1 style="color: rgb(49, 3, 93); "></h1>
+                <!-- Uploaded files will be displayed here -->
+            </div>
+            <div id="uploadedFiles" style="background-color: rgb(146, 176, 203); color: black; font-family: 'Times New Roman', Times, serif;">
+                <h1 style="color: rgb(49, 3, 93); ">Uploaded Study Material : </h1>
+                <!-- Uploaded files will be displayed here -->
+            </div>
+            <div id="assignments" style="background-color: rgb(146, 176, 203); color: black; font-family: 'Times New Roman', Times, serif;">
+                <h1 style="color: rgb(49, 3, 93); ">Posted Assignments : </h1>
+                <!-- Uploaded files will be displayed here -->
+            </div>
+            <div id="studentList" style="background-color: rgb(146, 176, 203); color: black; font-family: 'Times New Roman', Times, serif;">
+                <h1 style="color: rgb(49, 3, 93); ">Added Students : </h1>
+                <!-- Uploaded files will be displayed here -->
+            </div>
+        </div>
+            
+        <script src="scripts.js"></script>
+        
+    </main>
+    <footer>
+        
+        <p>&copy; 2024 RJ College</p>
+    </footer>
+    <!-- <script src="scripts.js"></script> -->
+</body>
+</html>
