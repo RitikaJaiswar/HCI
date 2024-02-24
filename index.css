@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #125b68;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* 100% viewport height minus header and footer */
+    
+}
+
+h2 {
+    margin-top: 0;
+}
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* 100% viewport height minus header and footer */
+}
+
+.login-options {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* background-image: url("image/bg.jpg"); */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #03374b;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #032f31;
+}
+
+footer {
+    background-color: #054b61;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

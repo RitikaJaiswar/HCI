@@ -1,0 +1,253 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #125b68;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.head{
+    background-color: #456f84;
+}
+
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+h1 {
+    margin: 0;
+}
+.button{
+    display: flex;
+    /* background-color: #054b61; */
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* 100% viewport height minus header and footer */
+}
+
+h2 {
+    margin-top: 0;
+}
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* 100% viewport height minus header and footer */
+}
+
+.login-options {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #03374b;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #032f31;
+}
+
+footer {
+    background-color: #054b61;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logo img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(7, 105, 192, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#uploadedFiles {
+    margin-top: 20px;
+    display: none;
+}
+#myForm{
+    display: none;
+}
+
+.file-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.file-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+#postAssignmentForm{
+    width: 300px;
+    display: none;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#assignments {
+    margin-top: 20px;
+    display: none;
+  
+}
+input[type="text"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+/* add students */
+.form-group {
+    padding-top: 2px;
+    margin-bottom: 20px;
+    padding-left: 2px;
+    padding-right: 40px;
+    
+}
+#addStudentForm button{
+    width: 270px;
+}
+#addStudentForm{
+    background-color: #ccc;
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    padding-top: 2px;
+    display: none;
+}
+#studentList {
+    display: none;
+    padding: 0;
+}
+
+.student-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#Message{
+    display: none;
+}
